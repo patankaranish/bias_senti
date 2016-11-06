@@ -1,0 +1,53 @@
+<!doctype html>
+
+<html>
+  <head>
+    <title>Bias Score</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 100%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre-line;;
+      /*  text-overflow: ellipsis;
+        overflow: hidden; */
+        word-break: break-all;
+      /*  max-width: 300px;*/
+      }
+      #result {
+        font-size: 120%;
+      }
+      #canvas-container {
+        height: 50px;
+        width: 200px;
+        font-size: 120%;
+        margin-top: 10px;
+        display: none;
+      }
+      #loading {
+        height: 200px;
+        width: 200px;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+    <img id="loading" src="loading.gif">
+    <div id="result"></div>
+      <div id="status"></div>
+
+    <!-- <canvas id="result-bar-left"></canvas> -->
+    <div id="canvas-container" > Sentiment Score:
+      <canvas id="result-bar-right"></canvas>
+    </div>
+    <script src="popup.js"></script>
+    <script src="stopwords.js"></script>
+    <script src="npovBiasLexicon.js"></script>
+    <script src="liuHuPosWords.js"></script>
+    <script src="liuHuNegWords.js"></script>
+  </body>
+</html>

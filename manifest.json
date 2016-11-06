@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bias Detection",
+  "description": "This extension shows a bias and sentiment score for the current page",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "http://hawttrends.appspot.com/",
+    "https://readability.com/",
+    "http://boilerpipe-web.appspot.com/extract"
+  ]
+}
